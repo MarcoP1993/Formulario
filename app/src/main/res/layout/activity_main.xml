@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/edt_nombreç"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiog_nacionalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+        <RadioButton
+            android:id="@+id/radio_nacional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mostrarnacionalidad"
+            android:text="@string/radio_nacional" />
+
+        <RadioButton
+            android:id="@+id/radio_extranjero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mostrarnacionalidad"
+            android:text="@string/radio_extranjero" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/btn_mostrar"
+        android:onClick="mostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiog_nacionalidad" />
+
+    <CheckBox
+        android:id="@+id/check_terminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/check_terminos"
+        android:onClick="aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mostrar"
+        app:layout_constraintStart_toStartOf="@+id/btn_mostrar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mostrar" />
+
+    <TextView
+        android:id="@+id/txt_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/rojo"
+        app:layout_constraintEnd_toEndOf="@+id/check_terminos"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/check_terminos"
+        app:layout_constraintTop_toBottomOf="@+id/check_terminos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

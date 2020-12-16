@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="edt_nombreç">Nombre</string>
+    <string name="radio_nacional">Producto Nacional</string>
+    <string name="radio_extranjero">Producto Extranjero</string>
+    <string name="btn_mostrar">Mostrar Nacionalidad</string>
+    <string name="check_terminos">Acepto los Terminos</string>
+</resources>
